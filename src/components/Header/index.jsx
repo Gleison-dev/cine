@@ -17,7 +17,7 @@ export default function Header() {
           </ul>
         </div>
         <div className="flex items-center">
-          <input type="text" placeholder="Pesquisar filme" />
+          <input className="mr-10" type="text" placeholder="Pesquisar filme" />
           <button>
             <img src={search_icon} alt="Ícone de pesquisa" />
           </button>
