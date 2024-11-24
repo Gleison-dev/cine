@@ -9,7 +9,7 @@ export default function Header() {
         <div>
           <img className="w-52" src={logo} alt="logo do cineafro" />
         </div>
-        <div>
+        <div className="ml-48">
           <ul className="flex">
             <Li text="Home" />
             <Li text="Filmes" />
@@ -17,7 +17,7 @@ export default function Header() {
           </ul>
         </div>
         <div className="flex items-center">
-          <input className="mr-10" type="text" placeholder="Pesquisar filme" />
+          <input className="w-72 bg-body mr-10 outline-none border p-2" type="text" placeholder="Pesquisar filme" />
           <button>
             <img src={search_icon} alt="Ícone de pesquisa" />
           </button>
