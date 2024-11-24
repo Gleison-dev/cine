@@ -14,11 +14,13 @@ export default function Header() {
             <Li text="Home" />
             <Li text="Filmes" />
             <Li text="Sobre" />
-            <input type="text" placeholder="Pesquisar filme" />
-            <button>
-              <img src={search_icon} alt="Ícone de pesquisa" />
-            </button>
           </ul>
+        </div>
+        <div className="flex items-center">
+          <input type="text" placeholder="Pesquisar filme" />
+          <button>
+            <img src={search_icon} alt="Ícone de pesquisa" />
+          </button>
         </div>
       </section>
     </>
