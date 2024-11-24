@@ -1,7 +1,7 @@
 export default function Li({ text }) {
   return (
     <>
-      <li>{text}</li>
+      <li className="mr-20">{text}</li>
     </>
   );
 }
