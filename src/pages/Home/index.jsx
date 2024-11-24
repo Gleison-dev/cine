@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 import ImageSlider from "../../components/ImageSlider";
+import Main from "../../components/Main";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <Header />
       </section>
       <section>
-        <ImageSlider />
+        <Main />
       </section>
     </>
   );
