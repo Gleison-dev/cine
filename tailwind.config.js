@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        "body": "#474448"
+        "body": "#474448",
+        "dark_orange": "#EABE7C",
+        "light_orange": "#ECE4B7"
       }
     },
   },
