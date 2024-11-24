@@ -29,10 +29,10 @@ export default function ImageSlider({
           </div>
           <div>
             <a href={trailer}>
-              <button>{text_trailer}</button>
+              <button>TRAILER</button>
             </a>
             <a href={watch}>
-              <button>{text_watch}</button>
+              <button>ASSISTIR</button>
             </a>
           </div>
         </div>
