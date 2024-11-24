@@ -10,8 +10,11 @@ export default function Header() {
         </div>
         <div>
             <ul>
-                <Li text="teste"/>
+                <Li text="Home"/>
+                <Li text="Filmes"/>
+                <Li text="Sobre"/>
             </ul>
+            <input type="text" placeholder="Pesquisar filme"/>
         </div>
       </section>
     </>
