@@ -5,9 +5,9 @@ import Li from "../Li";
 export default function Header() {
   return (
     <>
-      <section className="flex justify-around items-center text-white">
+      <section className="flex justify-around items-center text-white h-40">
         <div>
-          <img className="w-52" src={logo} alt="logo do cineafro" />
+          <img className="w-40" src={logo} alt="logo do cineafro" />
         </div>
         <div className="ml-48">
           <ul className="flex">
@@ -36,6 +36,7 @@ export default function Header() {
           </button>
         </div>
       </section>
+      <hr className="border-2 border-light_orange"/>
     </>
   );
 }
