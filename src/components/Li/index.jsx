@@ -1,4 +1,4 @@
-export default function Li() {
+export default function Li({ text }) {
   return (
     <>
       <li>{text}</li>
