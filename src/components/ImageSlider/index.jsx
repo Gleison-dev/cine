@@ -1,33 +1,26 @@
 export default function ImageSlider({
-  bg_img,
-  alt,
   title,
   genre,
   year,
   synopsis,
   trailer,
   watch,
-  text_trailer,
-  text_watch,
 }) {
   return (
     <>
-      <section>
-        <div>
-          <img src={bg_img} alt={alt} />
-        </div>
-        <div>
+      <section className="text-white">
+        <div className="space-y-8">
           <div>
             <h1>{title}</h1>
           </div>
-          <div>
+          <div className="flex gap-5">
             <p>{genre}</p>
             <p>{year}</p>
           </div>
-          <div>
+          <div className="w-96">
             <p>{synopsis}</p>
           </div>
-          <div>
+          <div className="flex gap-10">
             <a href={trailer}>
               <button>TRAILER</button>
             </a>
@@ -36,7 +29,7 @@ export default function ImageSlider({
             </a>
           </div>
         </div>
-        <div>
+        <div className="flex justify-center gap-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
