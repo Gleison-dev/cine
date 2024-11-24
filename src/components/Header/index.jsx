@@ -5,20 +5,20 @@ import Li from "../Li";
 export default function Header() {
   return (
     <>
-      <section>
+      <section className="flex justify-around items-center">
         <div>
-          <img src={logo} alt="logo do cineafro" />
+          <img className="w-52" src={logo} alt="logo do cineafro" />
         </div>
         <div>
-          <ul>
+          <ul className="flex">
             <Li text="Home" />
             <Li text="Filmes" />
             <Li text="Sobre" />
+            <input type="text" placeholder="Pesquisar filme" />
+            <button>
+              <img src={search_icon} alt="Ícone de pesquisa" />
+            </button>
           </ul>
-          <input type="text" placeholder="Pesquisar filme" />
-          <button>
-            <img src={search_icon} alt="Ícone de pesquisa" />
-          </button>
         </div>
       </section>
     </>
