@@ -1,7 +1,13 @@
+import logo from "../../assets/cineafro.png";
+
 export default function Header() {
   return (
     <>
-      <section></section>
+      <section>
+        <div>
+            <img src={logo} alt="logo do cineafro" />
+        </div>
+      </section>
     </>
   );
 }
