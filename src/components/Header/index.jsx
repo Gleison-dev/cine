@@ -10,7 +10,7 @@ export default function Header() {
         </div>
         <div>
             <ul>
-                <Li />
+                <Li text="teste"/>
             </ul>
         </div>
       </section>
