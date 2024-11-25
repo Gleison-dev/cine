@@ -6,7 +6,7 @@ export default function Main() {
     <>
       <section className="relative">
         <div className="bg h-screen opacity-50 absolute inset-0"></div>
-        <div className="relative z-10">
+        <div className="flex h-screen ml-52 items-center relative z-10">
           <ImageSlider
             alt="Imagem do pantera negra"
             title="Pantera Negra"
