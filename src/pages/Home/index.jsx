@@ -1,4 +1,5 @@
 import Header from "../../components/Header";
+import ListGenre from "../../components/ListGenre";
 import Main from "../../components/Main";
 
 export default function Home() {
@@ -9,6 +10,9 @@ export default function Home() {
       </section>
       <section>
         <Main />
+      </section>
+      <section>
+        <ListGenre />
       </section>
     </>
   );
