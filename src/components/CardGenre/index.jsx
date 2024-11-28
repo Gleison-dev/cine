@@ -5,8 +5,8 @@ export default function CardGenre({ image, alt, genre }) {
         <div className="shadow-xl">
           <img className="w-60 h-64" src={image} alt={alt} />
         </div>
-        <div className="flex items-center justify-between">
-          <p>{genre}</p>
+        <div className="flex items-center justify-between mt-5">
+          <p className="text-lg">{genre}</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
