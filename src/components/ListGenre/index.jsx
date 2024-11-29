@@ -1,6 +1,6 @@
 import CardGenre from "../CardGenre";
 import image_adventure from "../../assets/black_panther_poster.png";
-import image_drama from "../../assets/years_a_slave_poster.jpg";
+import image_drama from "../../assets/malcon_x_poster.jpg";
 
 export default function ListGenre() {
   return (
