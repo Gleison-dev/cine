@@ -1,6 +1,7 @@
 import CardGenre from "../CardGenre";
 import image_adventure from "../../assets/black_panther_poster.png";
 import image_drama from "../../assets/malcon_x_poster.jpg";
+import image_action from "../../assets/django_livre_poster.jpg";
 
 export default function ListGenre() {
   return (
@@ -16,8 +17,13 @@ export default function ListGenre() {
         />
         <CardGenre
           image={image_drama}
-          alt="Imagem do poster do pantera negra"
+          alt="Imagem do poster do Malcom X"
           genre="Drama"
+        />
+        <CardGenre
+          image={image_action}
+          alt="Imagem do poster do Django Livre"
+          genre="Ação"
         />
       </section>
     </>
