@@ -1,9 +1,9 @@
 export default function CardGenre({ image, alt, genre }) {
   return (
     <>
-      <section className="border w-60 rounded-md border-dark_orange text-white p-4">
+      <section className="border w-60 rounded-md border-dark_orange text-white p-4 bg-dark_orange hover:cursor-pointer">
         <div className="shadow-xl">
-          <img className="w-60 h-64" src={image} alt={alt} />
+          <img className="w-60 h-72" src={image} alt={alt} />
         </div>
         <div className="flex items-center justify-between mt-5">
           <p className="text-lg">{genre}</p>
