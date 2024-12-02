@@ -4,12 +4,12 @@ import Li from "../Li/index";
 export default function Footer() {
   return (
     <>
-      <section>
+      <section className="flex justify-evenly mt-52 items-start">
         <div>
-          <img src={logo} alt="Logo do site" />
+          <img className="w-52 h-52" src={logo} alt="Logo do site" />
         </div>
         <div>
-          <p>Navegação Rápida</p>
+          <p className="text-white text-xl">Navegação Rápida</p>
           <ul>
             <Li text="Home" />
             <Li text="Filmes" />
@@ -17,15 +17,15 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <p>Fale Conosco</p>
+          <p className="text-white text-xl">Fale Conosco</p>
           <p>cineafro@gmail.com</p>
         </div>
         <div>
-          <p>Redes Sociais</p>
+          <p className="text-white text-xl">Redes Sociais</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="48"
+            height="48"
             fill="#000000"
             viewBox="0 0 256 256"
           >
