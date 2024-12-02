@@ -14,16 +14,19 @@ export default function ListGenre() {
           image={image_adventure}
           alt="Imagem do poster do pantera negra"
           genre="Aventura"
+          page="/movieByGenre"
         />
         <CardGenre
           image={image_drama}
           alt="Imagem do poster do Malcom X"
           genre="Drama"
+          page="/movieByGenre"
         />
         <CardGenre
           image={image_action}
           alt="Imagem do poster do Django Livre"
           genre="Ação"
+          page="/movieByGenre"
         />
       </section>
     </>

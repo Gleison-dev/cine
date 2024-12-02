@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home/index";
+import MovieByGenre from "../pages/MovieByGenre";
 
 const router = createBrowserRouter([
   {
