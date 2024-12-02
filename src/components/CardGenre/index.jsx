@@ -1,7 +1,7 @@
 export default function CardGenre({ image, alt, genre }) {
   return (
     <>
-      <section className="border w-60 rounded-md border-dark_orange text-white p-4 bg-dark_orange hover:cursor-pointer">
+      <section className="border w-60 rounded-md border-dark_orange text-white p-4 hover:cursor-pointer">
         <div className="shadow-xl">
           <img className="w-60 h-72" src={image} alt={alt} />
         </div>
