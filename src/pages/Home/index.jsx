@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ListGenre from "../../components/ListGenre";
 import Main from "../../components/Main";
@@ -13,6 +14,9 @@ export default function Home() {
       </section>
       <section>
         <ListGenre />
+      </section>
+      <section>
+        <Footer />
       </section>
     </>
   );
