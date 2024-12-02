@@ -6,6 +6,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
+  {
+    path: "/movieByGenre",
+    element: <MovieByGenre />
+  }
 ]);
 
 export { router };
