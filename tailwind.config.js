@@ -6,7 +6,8 @@ export default {
       colors: {
         "body": "#474448",
         "dark_orange": "#EABE7C",
-        "light_orange": "#ECE4B7"
+        "light_orange": "#ECE4B7",
+        "body_white": "#E6EBE0"
       }
     },
   },
