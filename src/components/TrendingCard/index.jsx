@@ -1,9 +1,10 @@
 import Button from "../Button";
+import "./style.css";
 
 export default function TrendingCard({ image, alt, synopsis }) {
   return (
     <>
-      <section className="flex justify-center items-center gap-10 border">
+      <section className="section-card flex justify-center items-center gap-10 border p-4 rounded-md">
         <div>
           <img className="w-52" src={image} alt={alt} />
         </div>
