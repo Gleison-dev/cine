@@ -1,7 +1,11 @@
 export default function Trending() {
   return (
     <>
-      <section></section>
+      <section>
+        <div>
+            <h1>Em alta</h1>
+        </div>
+      </section>
     </>
   );
 }
