@@ -9,7 +9,7 @@ export default function TrendingCard({ image, alt, synopsis, link_trailer, link_
           <img className="w-52" src={image} alt={alt} />
         </div>
         <div className="flex flex-col w-80 space-y-8 items">
-          <p>{synopsis}</p>
+          <p className="text-white">{synopsis}</p>
           <div className="space-x-8">
             <a href={link_trailer} target="_blank">
               <Button text="TRAILER" />
