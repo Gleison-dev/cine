@@ -4,14 +4,14 @@ import american_fiction from "../../assets/american_fiction_poster.jpg";
 export default function Trending() {
   return (
     <>
-      <section>
+      <section className="mt-20 pl-10">
         <div>
-          <h1>Em alta</h1>
+          <h1 className="text-3xl">Em alta</h1>
         </div>
-        <div>
+        <div className="mt-16">
           <TrendingCard
             image={american_fiction}
-            synopsis="Lorem ipsum dolor sit amet. Aut sunt aliquam et dolores velit est ipsa  voluptatem ut impedit quisquam! Sit ratione vitae ut galisum accusamus  At fugit praesentium? Est labore maxime eum consectetur neque ex  voluptas quia qui dicta illo et similique rerum 33 modi aperiam. Non  quod quisquam ut quos temporibus est voluptatem quaerat ut vitae  quisquam."
+            synopsis="Monk é um escritor negro brilhante, mas seus livros não são populares já que ele se recusa a retratar negros de forma estereotipada em seu trabalho. Ele é pressionado por seu editor a criar uma obra comercial e escreve uma história carregada de preconceitos como piada."
             link_trailer="https://youtu.be/_vR1BPaVvLo?si=1umbtBZ5A5KdJu8E"
             link_watch="https://www.primevideo.com/dp/amzn1.dv.gti.58cb3b72-9cb7-41bc-83d4-3837fda6a071?autoplay=0&ref_=atv_cf_strg_wb"
           />
