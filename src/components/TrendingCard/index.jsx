@@ -4,7 +4,7 @@ import "./style.css";
 export default function TrendingCard({ image, alt, synopsis, link_trailer, link_watch }) {
   return (
     <>
-      <section className="section-card flex justify-center items-center gap-10 border p-4 rounded-md">
+      <section className="section-card flex justify-center items-center gap-10 shadow-xl p-4 rounded-md bg-black_card">
         <div>
           <img className="w-52" src={image} alt={alt} />
         </div>
