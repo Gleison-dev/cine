@@ -6,7 +6,7 @@ export default function Trending() {
     <>
       <section className="mt-20 pl-10">
         <div>
-          <h1 className="text-3xl">Em alta</h1>
+          <h1 className="text-3xl text-dark_orange">Em alta</h1>
         </div>
         <div className="mt-16">
           <TrendingCard
