@@ -11,9 +11,15 @@ export default function Footer() {
         <div>
           <p className="text-white text-xl">Navegação Rápida</p>
           <ul>
-            <li className="text-dark_orange text-xl hover:cursor-pointer">Home</li>
-            <li className="text-dark_orange text-xl hover:cursor-pointer">Filmes</li>
-            <li className="text-dark_orange text-xl hover:cursor-pointer">Sobre</li>
+            <li className="text-dark_orange text-xl hover:cursor-pointer hover:underline">
+              Home
+            </li>
+            <li className="text-dark_orange text-xl hover:cursor-pointer hover:underline">
+              Filmes
+            </li>
+            <li className="text-dark_orange text-xl hover:cursor-pointer hover:underline">
+              Sobre
+            </li>
           </ul>
         </div>
         <div>
