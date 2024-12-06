@@ -6,7 +6,7 @@ import Li from "../Li";
 export default function Header() {
   return (
     <>
-      <section className="flex justify-around items-center text-white h-40">
+      <section className="flex justify-around items-center text-white h-40 relative">
         <div>
           <img className="w-40" src={logo} alt="logo do cineafro" />
         </div>
