@@ -5,7 +5,7 @@ import the_kitchen from "../../assets/the_kitchen_poster.jpeg";
 export default function Trending() {
   return (
     <>
-      <section className="mt-10 pl-10 border p-4 rounded-xl border-body_white">
+      <section className="mt-10 pl-10 border p-4 rounded-xl border-black_card">
         <div>
           <h1 className="text-3xl text-dark_orange">Em alta</h1>
         </div>
