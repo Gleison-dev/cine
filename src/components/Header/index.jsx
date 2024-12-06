@@ -36,7 +36,7 @@ export default function Header() {
           </button>
         </div>
       </section>
-      <hr className="border-2 border-light_orange"/>
+      <hr className="border-2 border-dark_orange"/>
     </>
   );
 }

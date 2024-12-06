@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         body: "#474448",
-        dark_orange: "#EABE7C",
+        dark_orange: "#E6D62D",
         light_orange: "#ECE4B7",
         body_white: "#E6EBE0",
         black_card: "#171A21",
