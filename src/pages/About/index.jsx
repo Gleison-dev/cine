@@ -1,6 +1,6 @@
 import AboutCard from "../../components/AboutCard";
 import Header from "../../components/Header/index";
-import blob_background from "../../assets/blob_background.jpg"; // Certifique-se de que você tenha um arquivo CSS para estilos adicionais
+import dark_wallpapper from "../../assets/dark_wallpaper.jpg"; // Certifique-se de que você tenha um arquivo CSS para estilos adicionais
 
 export default function About() {
   return (
@@ -12,7 +12,7 @@ export default function About() {
         <div
           className="absolute inset-0 h-full"
           style={{
-            backgroundImage: `url(${blob_background})`,
+            backgroundImage: `url(${dark_wallpapper})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             opacity: 0.50, // Ajuste a opacidade conforme necessário
