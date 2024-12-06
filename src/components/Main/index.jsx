@@ -10,7 +10,7 @@ const images = [
     genre: "Aventura",
     year: "2018",
     synopsis:
-      "Lorem ipsum dolor sit amet. Aut sunt aliquam et dolores velit est ipsa  voluptatem ut impedit quisquam! Sit ratione vitae ut galisum accusamus  At fugit praesentium? Est labore maxime eum consectetur neque ex  voluptas quia qui dicta illo et similique rerum 33 modi aperiam. Non  quod quisquam ut quos temporibus est voluptatem quaerat ut vitae  quisquam.",
+      "Conheça a história de T'Challa, príncipe do reino de Wakanda, que perde o seu pai e viaja para os Estados Unidos, onde tem contato com os Vingadores. Entre as suas habilidades estão a velocidade, inteligência e os sentidos apurados.",
     trailer: "#",
     watch: "#",
     background: black_panther,
@@ -21,7 +21,7 @@ const images = [
     genre: "Drama",
     year: "2013",
     synopsis:
-      "Lorem ipsum dolor sit amet. Aut sunt aliquam et dolores velit est ipsa  voluptatem ut impedit quisquam! Sit ratione vitae ut galisum accusamus  At fugit praesentium? Est labore maxime eum consectetur neque ex  voluptas quia qui dicta illo et similique rerum 33 modi aperiam. Non  quod quisquam ut quos temporibus est voluptatem quaerat ut vitae  quisquam.",
+      "Em 1841, Solomon Northup é um negro livre, que vive em paz ao lado da esposa e filhos. Um dia, após aceitar um trabalho que o leva a outra cidade, ele é sequestrado e acorrentado. Vendido como se fosse um escravo, Solomon precisa superar humilhações físicas e emocionais para sobreviver. Ao longo de 12 anos, ele passa por dois senhores, Ford e Edwin Epps, que exploram seus serviços.",
     trailer: "#",
     watch: "#",
     background: years_a_slave,
