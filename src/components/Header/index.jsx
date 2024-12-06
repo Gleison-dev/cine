@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/cineafro.png";
 import search_icon from "../../assets/search_icon.svg";
 import Li from "../Li";
@@ -11,9 +12,13 @@ export default function Header() {
         </div>
         <div className="ml-48">
           <ul className="flex">
-            <Li text="Home" />
+            <Link to="/">
+              <Li text="Home" />
+            </Link>
             <Li text="Filmes" />
-            <Li text="Sobre" />
+            <Link to="/about">
+              <Li text="Sobre" />
+            </Link>
           </ul>
         </div>
         <div className="flex items-center">
@@ -36,7 +41,7 @@ export default function Header() {
           </button>
         </div>
       </section>
-      <hr className="border-2 border-dark_orange"/>
+      <hr className="border-2 border-dark_orange" />
     </>
   );
 }
