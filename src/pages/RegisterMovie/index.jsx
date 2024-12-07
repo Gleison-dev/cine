@@ -28,7 +28,7 @@ export default function RegisterMovie() {
         </div>
         <div className="mt-16">
           <form onSubmit={handleSubmit} className="flex gap-20 items-center">
-            <div>
+            <div className="space-y-2">
               <Label text="Título:" />
               <Input
                 placeholder="Digite o título do filme"
@@ -54,7 +54,7 @@ export default function RegisterMovie() {
                 onChange={(e) => setSynopsis(e.target.value)}
               />
             </div>
-            <div>
+            <div className="space-y-2">
               <Label text="Ano de lançamento:" />
               <Input
                 type="number"
