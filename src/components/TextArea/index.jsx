@@ -4,7 +4,7 @@ export default function TextArea({ placeholder, onChange }) {
       <textarea
         placeholder={placeholder}
         onChange={onChange}
-        className="text-black"
+        className="bg-transparent border outline-none w-72 h-20 rounded-md"
       ></textarea>{" "}
       <br />
     </>
