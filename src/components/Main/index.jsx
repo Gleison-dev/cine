@@ -11,8 +11,8 @@ const images = [
     year: "2018",
     synopsis:
       "Conheça a história de T'Challa, príncipe do reino de Wakanda, que perde o seu pai e viaja para os Estados Unidos, onde tem contato com os Vingadores. Entre as suas habilidades estão a velocidade, inteligência e os sentidos apurados.",
-    trailer: "#",
-    watch: "#",
+    trailer: "https://youtu.be/wL4a4MafSjQ?si=4XUCR2_c8tgNg55x",
+    watch: "https://www.disney.com.br/filmes/pantera-negra",
     background: black_panther,
   },
   {
@@ -22,8 +22,9 @@ const images = [
     year: "2013",
     synopsis:
       "Em 1841, Solomon Northup é um negro livre, que vive em paz ao lado da esposa e filhos. Um dia, após aceitar um trabalho que o leva a outra cidade, ele é sequestrado e acorrentado. Vendido como se fosse um escravo, Solomon precisa superar humilhações físicas e emocionais para sobreviver. Ao longo de 12 anos, ele passa por dois senhores, Ford e Edwin Epps, que exploram seus serviços.",
-    trailer: "#",
-    watch: "#",
+    trailer: "https://youtu.be/xSL_sCHDsHc?si=R1I15Vbgz4UdiZMN",
+    watch:
+      "https://www.primevideo.com/-/pt/detail/12-Anos-de-Escravid%C3%A3o/0IV9YSQ90SOFMEFN48G1HSD2SK",
     background: years_a_slave,
   },
 ];
