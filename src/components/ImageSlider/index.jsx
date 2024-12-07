@@ -46,12 +46,12 @@ export default function ImageSlider({
             <p className="text-xl">{synopsis}</p>
           </div>
           <div className="flex gap-10">
-            <a href={trailer}>
+            <a href={trailer} target="_blank">
               <button className="w-36 h-14 rounded-md text-black bg-dark_orange hover:bg-light_orange">
                 TRAILER
               </button>
             </a>
-            <a href={watch}>
+            <a href={watch} target="_blank">
               <button
                 className="w-36 h-14 rounded-md text-black bg-dark_orange hover:bg-light_orange"
                 hover:text-black
