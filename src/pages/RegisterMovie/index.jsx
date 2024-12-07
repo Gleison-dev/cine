@@ -39,7 +39,7 @@ export default function RegisterMovie() {
         <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
         {/* Overlay com opacidade */}
         <div className="flex flex-col justify-center items-center h-full text-white relative z-10">
-          <div className="border p-10 shadow-2xl">
+          <div className="border p-10 shadow-2xl rounded-md">
             <div className="flex justify-center">
               <h1 className="text-3xl">Cadastrar Filme</h1>
             </div>
