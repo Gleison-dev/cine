@@ -24,61 +24,67 @@ export default function RegisterMovie() {
       <Header />
       <section className="flex flex-col justify-center items-center h-screen text-white">
         <div>
-          <h1>Cadastrar Filme</h1>
+          <h1 className="text-3xl">Cadastrar Filme</h1>
         </div>
-        <div>
-          <form>
-            <Label text="Título:" />
-            <Input
-              placeholder="Digite o título do filme"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-            />
-            <Label text="Gênero:" />
-            <Input
-              placeholder="Digite o gênero do filme"
-              value={genre}
-              onChange={(e) => setGenre(e.target.value)}
-            />
-            <Label text="Diretor(a):" />
-            <Input
-              placeholder="Digite o título do filme"
-              value={director}
-              onChange={(e) => setDirector(e.target.value)}
-            />
-            <Label text="Sinopse:" />
-            <TextArea
-              placeholder="Digite a sinopse do filme"
-              value={synopsis}
-              onChange={(e) => setSynopsis(e.target.value)}
-            />
-            <Label text="Ano de lançamento:" />
-            <Input
-              type="number"
-              placeholder="Insira o ano de lançamento do filme"
-              value={year_release}
-              onChange={(e) => setYear_release(e.target.value)}
-            />
-            <Label text="Atores:" />
-            <Input
-              placeholder="Insira o nome dos atores"
-              value={actors}
-              onChange={(e) => setActors(e.target.value)}
-            />
-            <Label text="Streaming:" />
-            <Input
-              placeholder="Insira o link do streaming"
-              value={watch}
-              onChange={(e) => setWatch(e.target.value)}
-            />
-            <Label text="Trailer:" />
-            <Input
-              placeholder="Insira o link do trailer"
-              value={trailer}
-              onChange={(e) => setTrailer(e.target.value)}
-            />
-            <Button text="Cadastrar" />
+        <div className="mt-16">
+          <form onSubmit={handleSubmit} className="flex gap-20 items-center">
+            <div>
+              <Label text="Título:" />
+              <Input
+                placeholder="Digite o título do filme"
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+              />
+              <Label text="Gênero:" />
+              <Input
+                placeholder="Digite o gênero do filme"
+                value={genre}
+                onChange={(e) => setGenre(e.target.value)}
+              />
+              <Label text="Diretor(a):" />
+              <Input
+                placeholder="Digite o título do filme"
+                value={director}
+                onChange={(e) => setDirector(e.target.value)}
+              />
+              <Label text="Sinopse:" />
+              <TextArea
+                placeholder="Digite a sinopse do filme"
+                value={synopsis}
+                onChange={(e) => setSynopsis(e.target.value)}
+              />
+            </div>
+            <div>
+              <Label text="Ano de lançamento:" />
+              <Input
+                type="number"
+                placeholder="Insira o ano de lançamento do filme"
+                value={year_release}
+                onChange={(e) => setYear_release(e.target.value)}
+              />
+              <Label text="Atores:" />
+              <Input
+                placeholder="Insira o nome dos atores"
+                value={actors}
+                onChange={(e) => setActors(e.target.value)}
+              />
+              <Label text="Streaming:" />
+              <Input
+                placeholder="Insira o link do streaming"
+                value={watch}
+                onChange={(e) => setWatch(e.target.value)}
+              />
+              <Label text="Trailer:" />
+              <Input
+                placeholder="Insira o link do trailer"
+                value={trailer}
+                onChange={(e) => setTrailer(e.target.value)}
+              />
+            </div>
           </form>
+          <div className="flex justify-center mt-10">
+            <Button text="Cadastrar" />
+          </div>
         </div>
       </section>
     </>
