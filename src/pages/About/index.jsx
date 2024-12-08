@@ -15,7 +15,7 @@ export default function About() {
             backgroundImage: `url(${dark_wallpapper})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.50, // Ajuste a opacidade conforme necessário
+            opacity: 0.5, // Ajuste a opacidade conforme necessário
             zIndex: -1, // Background atrás de outros elementos
           }}
         ></div>
