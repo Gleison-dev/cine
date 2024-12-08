@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/cineafro.png";
-import search_icon from "../../assets/search_icon.svg";
 import Li from "../Li";
 
 export default function Header() {
@@ -15,7 +14,9 @@ export default function Header() {
             <Link to="/">
               <Li text="Home" />
             </Link>
-            <Li text="Filmes" />
+            <Link to="/movies">
+              <Li text="Filmes" />
+            </Link>
             <Link to="/about">
               <Li text="Sobre" />
             </Link>
