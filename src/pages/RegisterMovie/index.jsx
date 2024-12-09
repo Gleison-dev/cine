@@ -9,12 +9,11 @@ import blob_background from "../../assets/blob_background.jpg";
 export default function RegisterMovie() {
   const [title, setTitle] = useState("");
   const [genre, setGenre] = useState("");
-  const [director, setDirector] = useState("");
   const [synopsis, setSynopsis] = useState("");
   const [year_release, setYear_release] = useState("");
-  const [actors, setActors] = useState("");
   const [watch, setWatch] = useState("");
   const [trailer, setTrailer] = useState("");
+  const [urlImage, setUrlImage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -61,12 +60,6 @@ export default function RegisterMovie() {
                     value={genre}
                     onChange={(e) => setGenre(e.target.value)}
                   />
-                  <Label text="Diretor(a):" />
-                  <Input
-                    placeholder="Digite o nome do diretor(a)"
-                    value={director}
-                    onChange={(e) => setDirector(e.target.value)}
-                  />
                   <Label text="Sinopse:" />
                   <TextArea
                     placeholder="Digite a sinopse do filme"
@@ -81,12 +74,6 @@ export default function RegisterMovie() {
                     placeholder="Insira o ano de lançamento do filme"
                     value={year_release}
                     onChange={(e) => setYear_release(e.target.value)}
-                  />
-                  <Label text="Atores:" />
-                  <Input
-                    placeholder="Insira o nome dos atores"
-                    value={actors}
-                    onChange={(e) => setActors(e.target.value)}
                   />
                   <Label text="Streaming:" />
                   <Input
