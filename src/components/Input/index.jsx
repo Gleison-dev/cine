@@ -1,11 +1,11 @@
-export default function Input({ type, placeholder, onChage }) {
+export default function Input({ placeholder, onChange }) {
   return (
     <>
       <input
         className="bg-transparent border-b outline-none w-72"
-        type={type}
+        type="text"
         placeholder={placeholder}
-        onChange={onChage}
+        onChange={onChange}
       />{" "}
       <br />
     </>
