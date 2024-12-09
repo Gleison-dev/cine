@@ -1,23 +1,48 @@
 import Input from "../../components/Input";
 import Label from "../../components/Label";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TextArea from "../../components/TextArea";
 import Button from "../../components/Button";
 import Header from "../../components/Header";
 import blob_background from "../../assets/blob_background.jpg";
+import axios from "axios";
 
 export default function RegisterMovie() {
+  const [message, setMessage] = useState("");
+  const [movie, setMovie] = useState({});
   const [title, setTitle] = useState("");
   const [genre, setGenre] = useState("");
   const [synopsis, setSynopsis] = useState("");
-  const [year_release, setYear_release] = useState("");
-  const [watch, setWatch] = useState("");
+  const [year_release, setYear_release] = useState(0);
+  const [streaming, setStreaming] = useState("");
   const [trailer, setTrailer] = useState("");
   const [urlImage, setUrlImage] = useState("");
 
+  const handleRegister = async () => {
+    try {
+      const { data } = await axios.post(
+        "https://cine-afro-backend.onrender.com/createMovie",
+        {
+          title: title,
+          genre: genre,
+          year_release: year_release,
+          synopsis: synopsis,
+          trailer: trailer,
+          streaming: streaming,
+          url_image: urlImage,
+        }
+      );
+      setMovie(data);
+      setMessage(data.newMovie);
+      console.log(movie);
+    } catch (error) {
+      console.error("Não foi possível cadastrar o filme:", error);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para enviar os dados do filme
+    handleRegister();
   };
 
   return (
@@ -70,7 +95,6 @@ export default function RegisterMovie() {
                 <div className="space-y-2">
                   <Label text="Ano de lançamento:" />
                   <Input
-                    type="number"
                     placeholder="Insira o ano de lançamento do filme"
                     value={year_release}
                     onChange={(e) => setYear_release(e.target.value)}
@@ -78,8 +102,8 @@ export default function RegisterMovie() {
                   <Label text="Streaming:" />
                   <Input
                     placeholder="Insira o link do streaming"
-                    value={watch}
-                    onChange={(e) => setWatch(e.target.value)}
+                    value={streaming}
+                    onChange={(e) => setStreaming(e.target.value)}
                   />
                   <Label text="Trailer:" />
                   <Input
@@ -87,10 +111,19 @@ export default function RegisterMovie() {
                     value={trailer}
                     onChange={(e) => setTrailer(e.target.value)}
                   />
+                  <Label text="Imagem:" />
+                  <Input
+                    placeholder="Insira o link da imagem"
+                    value={urlImage}
+                    onChange={(e) => setUrlImage(e.target.value)}
+                  />
                 </div>
               </form>
               <div className="flex justify-center mt-10">
-                <Button text="Cadastrar" />
+                <Button text="Cadastrar" onClick={handleRegister} />
+              </div>
+              <div className="flex justify-center mt-10">
+                <p className="text-xl text-dark_orange">{message}</p>
               </div>
             </div>
           </div>
