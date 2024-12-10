@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import axios from "axios";
 
@@ -11,11 +11,14 @@ export default function GetAllMovies() {
         "https://cine-afro-backend.onrender.com/movies"
       );
       setMovies(data);
-      console.log(movies);
     } catch (error) {
       return console.error(error);
     }
   };
+
+  useEffect(() => {
+    getAllMovies();
+  }, [movies]);
 
   return (
     <>
@@ -23,7 +26,12 @@ export default function GetAllMovies() {
         <div>
           <Header />
         </div>
-        
+        <div>
+          <div>
+            <h1>Filmes</h1>
+          </div>
+          <div></div>
+        </div>
       </section>
     </>
   );
