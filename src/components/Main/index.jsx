@@ -27,6 +27,18 @@ const images = [
       "https://www.primevideo.com/-/pt/detail/12-Anos-de-Escravid%C3%A3o/0IV9YSQ90SOFMEFN48G1HSD2SK",
     background: years_a_slave,
   },
+  {
+    alt: "Imagem do Homem aranha no aranhaverso",
+    title: "Homem-Aranha no Aranhaverso",
+    genre: "Animação",
+    year: "2018",
+    synopsis:
+      "Após ser atingido por uma teia radioativa, Miles Morales, um jovem negro do Brooklyn, se torna o Homem-Aranha, inspirado no legado do já falecido Peter Parker. Entretanto, ao visitar o túmulo de seu ídolo em uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói por baixo de um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim como outras versões do Homem-Aranha.",
+    trailer: "https://youtu.be/IrQ3iLUKr0I?si=hu6YDcMjdkcgEuRu",
+    watch:
+      "https://www.primevideo.com/dp/amzn1.dv.gti.86b4ff15-f1bc-836a-b07a-4efc9ac83d25?autoplay=0&ref_=atv_cf_strg_wb",
+    background: "https://wallpapercave.com/wp/wp11026865.jpg",
+  },
 ];
 
 export default function Main() {
