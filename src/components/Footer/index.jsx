@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/cineafro.png";
-import Li from "../Li/index";
 
 export default function Footer() {
   return (
@@ -11,15 +11,21 @@ export default function Footer() {
         <div>
           <p className="text-white text-xl">Navegação Rápida</p>
           <ul>
-            <li className="text-dark_orange text-xl hover:cursor-pointer hover:underline">
-              Home
-            </li>
-            <li className="text-dark_orange text-xl hover:cursor-pointer hover:underline">
-              Filmes
-            </li>
-            <li className="text-dark_orange text-xl hover:cursor-pointer hover:underline">
-              Sobre
-            </li>
+            <Link to="/">
+              <li className="text-dark_orange text-xl hover:cursor-pointer hover:underline">
+                Home
+              </li>
+            </Link>
+            <Link to="/movies">
+              <li className="text-dark_orange text-xl hover:cursor-pointer hover:underline">
+                Filmes
+              </li>
+            </Link>
+            <Link to="/about">
+              <li className="text-dark_orange text-xl hover:cursor-pointer hover:underline">
+                Sobre
+              </li>
+            </Link>
           </ul>
         </div>
         <div>
