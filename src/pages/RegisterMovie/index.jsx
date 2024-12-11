@@ -34,7 +34,6 @@ export default function RegisterMovie() {
       );
       setMovie(data);
       setMessage(data.newMovie);
-      console.log(movie);
     } catch (error) {
       console.error("Não foi possível cadastrar o filme:", error);
     }
