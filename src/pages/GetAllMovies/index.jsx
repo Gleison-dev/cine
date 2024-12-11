@@ -11,7 +11,7 @@ export default function GetAllMovies() {
       const { data } = await axios.get(
         "https://cine-afro-backend.onrender.com/movies"
       );
-      setMovies(data);
+      setMovies(data.movies);
     } catch (error) {
       return console.error(error);
     }
@@ -19,7 +19,7 @@ export default function GetAllMovies() {
 
   useEffect(() => {
     getAllMovies();
-  }, [movies]);
+  }, []);
 
   return (
     <>
@@ -27,18 +27,22 @@ export default function GetAllMovies() {
         <div>
           <Header />
         </div>
-        <div>
-          <div>
-            <h1>Filmes</h1>
+        <div className="mt-20">
+          <div className="flex justify-start ml-40">
+            <h1 className="text-dark_orange text-3xl underline">Filmes</h1>
           </div>
-          <div>
-            <CardMovie
-              title="Pantera Negra"
-              image="https://upload.wikimedia.org/wikipedia/pt/thumb/2/28/Black_Panther_2018.jpg/250px-Black_Panther_2018.jpg"
-              genre="Ação"
-              year="2018"
-              synopsis="Conheça a história de T'Challa, príncipe do reino de Wakanda, que perde o seu pai e viaja para os Estados Unidos, onde tem contato com os Vingadores. Entre as suas habilidades estão a velocidade, inteligência e os sentidos apurados."
-            />
+          <div className="flex flex-wrap justify-evenly gap-8 mt-20">
+            {Array.isArray(movies) &&
+              movies.map((i) => (
+                <CardMovie
+                  key={i.id}
+                  title={i.title}
+                  image={i.url_image}
+                  synopsis={i.synopsis}
+                  link_trailer={i.trailer}
+                  link_watch={i.streaming}
+                />
+              ))}
           </div>
         </div>
       </section>
