@@ -36,8 +36,9 @@ export default function GetAllMovies() {
             <h1 className="text-dark_orange text-3xl underline">Filmes</h1>
           </div>
           {isLoading ? (
-            <div className="flex justify-center mt-52">
+            <div className="flex flex-col items-center justify-center mt-52">
               <div className="loader"></div>
+              <p className="text-white">Carregando...</p>
             </div>
           ) : (
             <div className="flex flex-wrap justify-evenly gap-8 mt-20">
