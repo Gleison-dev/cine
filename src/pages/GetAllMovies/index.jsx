@@ -37,6 +37,8 @@ export default function GetAllMovies() {
                 <CardMovie
                   key={i.id}
                   title={i.title}
+                  genre={i.genre}
+                  year_release={i.year_release}
                   image={i.url_image}
                   synopsis={i.synopsis}
                   link_trailer={i.trailer}
