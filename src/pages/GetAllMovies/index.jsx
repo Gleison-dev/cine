@@ -36,7 +36,9 @@ export default function GetAllMovies() {
             <h1 className="text-dark_orange text-3xl underline">Filmes</h1>
           </div>
           {isLoading ? (
-            <div className="loader"></div>
+            <div className="flex justify-center mt-52">
+              <div className="loader"></div>
+            </div>
           ) : (
             <div className="flex flex-wrap justify-evenly gap-8 mt-20">
               {Array.isArray(movies) &&
