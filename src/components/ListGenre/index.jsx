@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Li from "../Li";
 
 export default function ListGenre() {
@@ -9,16 +10,32 @@ export default function ListGenre() {
         </section>
         <div className="space-y-4 mt-20">
           <ul className="flex justify-center">
-            <Li text="Ação" />
-            <Li text="Aventura" />
-            <Li text="Comédia" />
-            <Li text="Drama" />
+            <Link to="/actionGenre">
+              <Li text="Ação" />
+            </Link>
+            <Link to="/adventureGenre">
+              <Li text="Aventura" />
+            </Link>
+            <Link to="/comedyGenre">
+              <Li text="Comédia" />
+            </Link>
+            <Link to="/dramaGenre">
+              <Li text="Drama" />
+            </Link>
           </ul>
           <ul className="flex justify-center">
-            <Li text="Documentário" />
-            <Li text="Suspense" />
-            <Li text="Romance" />
-            <Li text="Animação" />
+            <Link to="/documentaryGenre">
+              <Li text="Documentário" />
+            </Link>
+            <Link to="/suspenseGenre">
+              <Li text="Suspense" />
+            </Link>
+            <Link to="/romanceGenre">
+              <Li text="Romance" />
+            </Link>
+            <Link to="/animationGenre">
+              <Li text="Animação" />
+            </Link>
           </ul>
         </div>
       </section>
