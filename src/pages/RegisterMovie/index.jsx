@@ -17,6 +17,7 @@ export default function RegisterMovie() {
   const [streaming, setStreaming] = useState("");
   const [trailer, setTrailer] = useState("");
   const [urlImage, setUrlImage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleRegister = async () => {
     try {
@@ -36,6 +37,8 @@ export default function RegisterMovie() {
       setMessage(data.newMovie);
     } catch (error) {
       console.error("Não foi possível cadastrar o filme:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -119,7 +122,11 @@ export default function RegisterMovie() {
                 </div>
               </form>
               <div className="flex justify-center mt-10">
-                <Button text="Cadastrar" onClick={handleRegister} />
+                <Button
+                  text={loading ? "Carregando..." : "Cadastrar"}
+                  onClick={handleRegister}
+                  disabled={loading}
+                />
               </div>
               <div className="flex justify-center mt-10">
                 <p className="text-xl text-dark_orange">{message}</p>
