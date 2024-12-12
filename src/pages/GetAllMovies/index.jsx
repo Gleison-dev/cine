@@ -31,8 +31,8 @@ export default function GetAllMovies() {
         <div>
           <Header />
         </div>
-        <div className="mt-20">
-          <div className="flex justify-start ml-40">
+        <div className="mt-20 border p-10 rounded-md border-black_card">
+          <div className="flex justify-start ml-32">
             <h1 className="text-dark_orange text-3xl underline">Filmes</h1>
           </div>
           {isLoading ? (
