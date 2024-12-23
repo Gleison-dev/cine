@@ -15,7 +15,6 @@ export default function MovieByGenre({ url_genre, text_genre }) {
       );
       setMovies(data.movieByGenre);
       setIsLoading(false);
-      console.log(movies);
     } catch (error) {
       return console.error("Não foi possível buscar os livros: ", error);
     }
