@@ -1,7 +1,13 @@
+import MovieByGenre from "../../components/MovieByGenre";
+
 export default function AnimationGenre() {
   return (
     <>
-      <section></section>
+      <section>
+        <div>
+          <MovieByGenre url_genre="Animação" text_genre="Animação" />
+        </div>
+      </section>
     </>
   );
 }
