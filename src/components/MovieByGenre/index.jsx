@@ -4,7 +4,18 @@ import { useState } from "react";
 import "./style.css";
 import CardMovie from "../CardMovie/index";
 
-export default function MovieByGenre({ url_genre, text_genre }) {
+export default function MovieByGenre({
+  url_genre,
+  text_genre,
+  title,
+  genre,
+  year_release,
+  image,
+  alt,
+  synopsis,
+  link_trailer,
+  link_watch,
+}) {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
