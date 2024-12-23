@@ -30,18 +30,20 @@ export default function MovieByGenre({ url_genre, text_genre }) {
         <div>
           <Header />
         </div>
-        <div>
-          <h1>{text_genre}</h1>
+        <div className="mt-20 pl-20">
+          <h1 className="text-dark_orange text-3xl underline">{text_genre}</h1>
         </div>
         {isLoading ? (
-          <div>
+          <div className="flex flex-col items-center justify-center mt-52">
             <div>
               <div className="loader"></div>
+            </div>
+            <div>
               <p>Carregando...</p>
             </div>
           </div>
         ) : (
-          <div>
+          <div className="flex flex-wrap justify-evenly gap-8 mt-20">
             {Array.isArray(movies) &&
               movies.map((i) => (
                 <CardMovie
