@@ -43,7 +43,7 @@ export default function MovieByGenre({ url_genre, text_genre }) {
           </div>
         ) : (
           <div className="flex flex-wrap justify-evenly gap-8 mt-20">
-            {Array.isArray(movies) &&
+            {Array.isArray(movies) && movies.length > 0 ? (
               movies.map((i) => (
                 <CardMovie
                   key={i.id}
@@ -56,7 +56,10 @@ export default function MovieByGenre({ url_genre, text_genre }) {
                   link_trailer={i.trailer}
                   link_watch={i.streaming}
                 />
-              ))}
+              ))
+            ) : (
+              <p>Nenhum filme encontrado</p>
+            )}
           </div>
         )}
       </section>
