@@ -58,7 +58,9 @@ export default function MovieByGenre({ url_genre, text_genre }) {
                 />
               ))
             ) : (
-              <p>Nenhum filme encontrado</p>
+              <div className="flex justify-center items-center mt-40">
+                <p className="text-xl">Nenhum filme encontrado</p>
+              </div>
             )}
           </div>
         )}
