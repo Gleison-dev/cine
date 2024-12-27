@@ -11,6 +11,7 @@ import DocumentaryGenre from "../pages/DocumentaryGenre";
 import SuspenseGenre from "../pages/SuspenseGenre";
 import RomanceGenre from "../pages/RomanceGenre";
 import AnimationGenre from "../pages/AnimationGenre";
+import GetMovieByTitle from "../pages/GetMovieByTitle";
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
   {
     path: "/animationGenre",
     element: <AnimationGenre />,
+  },
+  {
+    path: "/getMovieByTitle",
+    element: <GetMovieByTitle />,
   },
 ]);
 
