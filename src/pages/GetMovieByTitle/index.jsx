@@ -8,6 +8,7 @@ export default function GetMovieByTitle() {
   const [movie, setMovie] = useState([]);
   const [title, setTitle] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [hasSearched, setHasSearched] = useState(false);
 
   const handleSearch = async () => {
     setIsLoading(true);
@@ -21,7 +22,7 @@ export default function GetMovieByTitle() {
         }
       );
       setMovie(data.movieByTitle);
-      console.log(movie);
+      setHasSearched(true);
     } catch (error) {
       return console.error("Não foi possível buscar o filme: ", error);
       setIsLoading(false);
@@ -29,7 +30,7 @@ export default function GetMovieByTitle() {
       setIsLoading(false);
     }
   };
-
+  
   return (
     <>
       <section className="text-body_white">
@@ -74,25 +75,25 @@ export default function GetMovieByTitle() {
             </div>
           ) : (
             <div className="flex flex-wrap justify-evenly gap-8 mt-20">
-              {Array.isArray(movie) && movie.length > 0 ? (
-                movie.map((i) => (
-                  <CardMovie
-                    key={i.id}
-                    title={i.title}
-                    genre={i.genre}
-                    year_release={i.year_release}
-                    image={i.url_image}
-                    alt={i.alt}
-                    synopsis={i.synopsis}
-                    link_trailer={i.trailer}
-                    link_watch={i.streaming}
-                  />
-                ))
-              ) : (
-                <div className="flex justify-center items-center mt-20">
-                  <p className="text-xl">Nenhum filme encontrado!</p>
-                </div>
-              )}
+              {hasSearched && Array.isArray(movie) && movie.length > 0
+                ? movie.map((i) => (
+                    <CardMovie
+                      key={i.id}
+                      title={i.title}
+                      genre={i.genre}
+                      year_release={i.year_release}
+                      image={i.url_image}
+                      alt={i.alt}
+                      synopsis={i.synopsis}
+                      link_trailer={i.trailer}
+                      link_watch={i.streaming}
+                    />
+                  ))
+                : hasSearched && (
+                    <div className="flex justify-center items-center mt-20">
+                      <p className="text-xl">Nenhum filme encontrado!</p>
+                    </div>
+                  )}
             </div>
           )}
         </div>
