@@ -74,7 +74,7 @@ export default function GetMovieByTitle() {
               </div>
             </div>
           ) : (
-            <div className="flex flex-wrap justify-evenly gap-8 mt-20">
+            <div className="flex flex-wrap justify-evenly gap-8 mt-10 mb-20">
               {hasSearched && Array.isArray(movie) && movie.length > 0
                 ? movie.map((i) => (
                     <CardMovie
